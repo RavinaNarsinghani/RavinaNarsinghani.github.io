@@ -510,44 +510,47 @@
               <h3 class="project-title">Real Estate Management Module</h3>
             </div>
             <p class="project-description">
-              Developed an Odoo-based property management solution covering properties, customers, sales, and bookings.
+              Engineered a property lifecycle and transaction management solution in Odoo to manage properties, client inquiries, offer negotiations, and automated billing.
             </p>
             <div class="project-contributions">
               <h4 class="contributions-heading">Key Technical Contributions:</h4>
               <ul class="contributions-list">
-                <li>Designed custom relational models and structured data architectures for properties, clients, and transaction records.</li>
-                <li>Implemented backend business logic, tailored form and tree views, and strict data validation constraints.</li>
-                <li>Engineered workflow automation for sales pipelines, status transitions, and booking management operations.</li>
+                <li>Designed custom relational models and architectures for properties, types, tags, offers, and client interactions.</li>
+                <li>Implemented offer negotiation workflows with state validation (Draft, Offer Received, Accepted, Sold, Canceled) preventing acceptance of lower or invalid bids.</li>
+                <li>Integrated with Odoo Account module (account.move) to automate invoice generation and commission entries upon property sale.</li>
+                <li>Engineered backend business logic, tailored Kanban and form views, search filters, and record-rule security constraints.</li>
               </ul>
             </div>
             <div class="project-tags">
-              <span class="tag">Odoo</span>
+              <span class="tag">Odoo 18</span>
               <span class="tag">Python</span>
               <span class="tag">Odoo ORM</span>
               <span class="tag">XML</span>
+              <span class="tag">PostgreSQL</span>
             </div>
           </article>
 
           <!-- Project 2: HR Attendance & Leave -->
           <article class="project-card">
             <div class="project-card-header">
-              <div class="project-category-badge">Odoo HR Operations</div>
+              <div class="project-category-badge">Odoo ERP Module</div>
               <h3 class="project-title">HR Attendance &amp; Leave Management System</h3>
             </div>
             <p class="project-description">
-              Customized attendance and time-off workflows to support employee attendance tracking, leave processes, and approval operations.
+              Developed an enterprise workforce attendance and time-off solution featuring real-time punch mechanisms, leave accruals, and an interactive OWL dashboard.
             </p>
             <div class="project-contributions">
               <h4 class="contributions-heading">Key Technical Contributions:</h4>
               <ul class="contributions-list">
-                <li>Automated attendance validation checks and recurring leave accrual calculations.</li>
-                <li>Implemented scheduled Cron Jobs to automate daily processing and structured approval workflows.</li>
-                <li>Built intuitive attendance dashboards covering employees, leave, holidays, work schedules, and status tracking.</li>
-                <li>Troubleshot and reconciled attendance records, leave allocations, work entries, and dashboard metrics.</li>
+                <li>Built a custom interactive OWL (Odoo Web Library) attendance dashboard with real-time punch-in/out, break tracking, monthly calendar views, and GPS geolocation tagging.</li>
+                <li>Engineered attendance regularizations (late coming, early going, on-duty) and correction workflows with manager approval pipelines and audit logs.</li>
+                <li>Automated leave accrual policies, joining policies, and scheduled Cron Jobs for daily attendance processing and work entry synchronization.</li>
+                <li>Reconciled complex attendance logs, resource calendar working-hour calculations, and cumulative payslip report generation.</li>
               </ul>
             </div>
             <div class="project-tags">
-              <span class="tag">Odoo</span>
+              <span class="tag">Odoo 18</span>
+              <span class="tag">OWL (JavaScript)</span>
               <span class="tag">Python</span>
               <span class="tag">Odoo ORM</span>
               <span class="tag">XML</span>
@@ -555,28 +558,118 @@
             </div>
           </article>
 
-          <!-- Project 3: CRM Data Analysis -->
+          <!-- Project 3: Odoo Payroll -->
           <article class="project-card">
             <div class="project-card-header">
-              <div class="project-category-badge">Data Analysis &amp; Insights</div>
-              <h3 class="project-title">CRM-Focused Data Analysis</h3>
+              <div class="project-category-badge">Odoo ERP Module</div>
+              <h3 class="project-title">Advanced Payroll &amp; Compensation System</h3>
             </div>
             <p class="project-description">
-              Analyzed customer-related business data to explore customer behavior and support retention and engagement strategies.
+              Customized enterprise payroll computation, statutory benefit deductions, overtime processing, and multi-tier payslip workflows in Odoo.
             </p>
             <div class="project-contributions">
               <h4 class="contributions-heading">Key Technical Contributions:</h4>
               <ul class="contributions-list">
-                <li>Preprocessed and evaluated real-world commercial datasets using Python data analysis techniques.</li>
-                <li>Examined behavioral customer indicators and key interactions to identify actionable retention patterns.</li>
-                <li>Derived analytical insights to assist business teams in refining engagement strategies and CRM decision-making.</li>
+                <li>Implemented dynamic CTC auto-computation on employee profiles incorporating basic wages, statutory Provident Fund (fixed vs. 12%), and gratuity deductions.</li>
+                <li>Engineered overtime models (hr.overtime) and integrated work-entry contract hours directly with monthly payslip calculation.</li>
+                <li>Built batch payslip generation wizards, cumulative payslip reports, and Excel export utilities for HR and finance compliance audits.</li>
+                <li>Configured scheduled Cron Jobs for automatic overtime calculation and payroll validation against contract validity boundaries.</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Odoo 18</span>
+              <span class="tag">Python</span>
+              <span class="tag">Odoo ORM</span>
+              <span class="tag">XML</span>
+              <span class="tag">Payroll Logic</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </article>
+
+          <!-- Project 4: Platform ERP Recruitment -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-category-badge">Platform ERP &bull; Python Backend</div>
+              <h3 class="project-title">Recruitment &amp; Candidate Onboarding Engine</h3>
+            </div>
+            <p class="project-description">
+              Engineered an end-to-end recruitment management and onboarding subsystem within an enterprise Python ERP, powering public job boards, interview pipelines, and automated hiring.
+            </p>
+            <div class="project-contributions">
+              <h4 class="contributions-heading">Key Technical Contributions:</h4>
+              <ul class="contributions-list">
+                <li>Developed a centralized application stage transition engine with strict validation rules, stage sequencing, and automated candidate rejection notifications.</li>
+                <li>Engineered an offer letter generation system with customizable Jinja2 templates, header/footer branding, and automated PDF export via WeasyPrint.</li>
+                <li>Implemented a public candidate joining form portal with dynamic validation, HR review/revision cycles, and automated mapper syncing approved candidates to Employee records.</li>
+                <li>Built interview scheduling workflows with calendar invites and interviewer notifications, backed by an interactive recruitment KPI dashboard.</li>
               </ul>
             </div>
             <div class="project-tags">
               <span class="tag">Python</span>
-              <span class="tag">Data Analysis</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQLAlchemy</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">WeasyPrint</span>
+              <span class="tag">React</span>
             </div>
           </article>
+
+          <!-- Project 5: Platform ERP Attendance -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-category-badge">Platform ERP &bull; Python Backend</div>
+              <h3 class="project-title">Work Schedule &amp; Shortfall Monitoring System</h3>
+            </div>
+            <p class="project-description">
+              Engineered an automated workforce attendance tracking and compliance engine in Python/FastAPI with shift scheduling, working-hours shortfall auditing, and proactive alerts.
+            </p>
+            <div class="project-contributions">
+              <h4 class="contributions-heading">Key Technical Contributions:</h4>
+              <ul class="contributions-list">
+                <li>Built attendance REST APIs, check-in/out logic, and timezone-aware shift schedule helpers supporting multi-schedule timetable lines.</li>
+                <li>Architected an automated working shortfall detection engine with scheduled background routines calculating hours deficits and sending automated notification emails.</li>
+                <li>Implemented attendance regularization and correction audit workflows with date range filtering, reason tracking, and manager authorization.</li>
+                <li>Developed async test suites (pytest-asyncio) verifying shortfall calculations, employee security scopes, bulk record handling, and audit trail integrity.</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQLAlchemy (Async)</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Pytest</span>
+              <span class="tag">React</span>
+            </div>
+          </article>
+
+          <!-- Project 6: Platform ERP Time Off -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-category-badge">Platform ERP &bull; Python Backend</div>
+              <h3 class="project-title">Time Off &amp; Leave Management Subsystem</h3>
+            </div>
+            <p class="project-description">
+              Built a high-concurrency leave management subsystem in Python and async SQLAlchemy with multi-tier approval workflows and automated payroll synchronization.
+            </p>
+            <div class="project-contributions">
+              <h4 class="contributions-heading">Key Technical Contributions:</h4>
+              <ul class="contributions-list">
+                <li>Architected domain models (LeaveType, LeaveRequest, LeaveAllocation) with PostgreSQL constraints and row-level locking for concurrency safety.</li>
+                <li>Implemented approval policies and multi-state lifecycle workflows (Draft, Confirm, Validate, Refuse) with strict role-based access control.</li>
+                <li>Engineered seamless integration with the payroll engine, automatically fetching approved unpaid leaves to adjust worked-day lines and deductions.</li>
+                <li>Authored test suites covering PostgreSQL concurrency, race condition prevention, and employee authentication scoping.</li>
+              </ul>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQLAlchemy</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Asyncpg</span>
+              <span class="tag">Pytest</span>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
